@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Coding Quiz</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale-1" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <!-- Header Section for View HighScores/Time -->
+        <header class="header">
+            <span id="highscores-link" >View Highscores</span>
+            <span id="timer">Time: 0</span>
+       
+        </header>
+
+        <main>
+            <!-- Code Quiz Description/Start Button for Quiz -->
+            <section id="landing">
+                <div id="landing-title">Coding Quiz Challenge</div>
+                <p id="landing-body">Try to answer the following coding questions within the time limit! Keep in mind </p>
+                <button id="landing-start-quiz">Start Quiz</button>
+            </section>
+            <!-- Question Section -->
+            <section id="questions">
+                <div id="question-1" class="question" hidden>
+                    <p class="question-text">Commonly used data types DO NOT include:</p>
+                    <ol class="question-choices">
+                        <li class="question-choice">
+                            <button id="question1-choice1">strings</button>
+
+                        </li>
+
+                        <li class="question-choices">
+                            <button id="question1-choice2">booleans</button>
+                        </li>
+
+                        <li class="question-choices">
+                            <button id="question1-choice3">alert</button>
+                        </li>
+
+                        <li class="question-choices">
+                            <button id ="question1-choice4">numbers</button>
+                        </li>
+                    </ol>
+                </div>
+                <div id="question-2" class="question" hidden>
+                    <p class="question-text">The conditions in an if /else statement is enclosed with:</p>
+                    <ol class="question-choices">
+                        <li class="question-choice">
+                            <button id="question2-choice1">quotes</button>
+
+                        </li>
+                        <li class="question-choice">
+                            <button id ="question2-choice2">curly brackets</button>
+                        </li>
+
+                        <li class="quesion-choice">
+                            <button id="question2-choice3">paranthesis</button>
+                        </li>
+
+                        <li class="question-choice">
+                            <button id="question2-choice4">square brackets</button>
+                        </li>
+                    </ol>
+                    <div id="question-1-result"></div>
+                </div>
+
+                <div id="question-3" class="question" hidden>
+                    <p class="question-text">Arrays in javascript can be used to store:</p>
+                    <ol class="question-choices">
+                        <li class="question-choice">
+                            <button id="question3-choice1">numbers and strings</button>
+
+                        </li>
+                        <li class="question-choice">
+                            <button id="question3-choice2">other Arrays</button>
+                        </li>
+
+                        <li class="quesion-choice">
+                            <button id="question3-choice3">booleans</button>
+                        </li>
+
+                        <li class="question-choice">
+                            <button id="question3-choice4">all of the above</button>
+                        </li>
+                    </ol>
+                    <div id="question-2-result"></div>
+                    </div>
+                    
+                    <div id="question-4" class="question" hidden>
+                        <p class="question-text">String values must be enclosed within when being assigned to variables :</p>
+                        <ol class="question-choices">
+                            <li class="question-choice">
+                                <button id="question4-choice1">commas</button>
+    
+                            </li>
+                            <li class="question-choice">
+                                <button id="question4-choice2">curly brackets</button>
+                            </li>
+    
+                            <li class="quesion-choice">
+                                <button id="question4-choice3">quotes</button>
+                            </li>
+    
+                            <li class="question-choice">
+                                <button id="question4-choice4">paranthesis</button>
+                            </li>
+                        </ol>
+                        <div id="question-3-result"></div>
+                        </div>
+                        
+                    <div id="question-5" class="question" hidden>
+                            <p class="question-text">A very useful tool used during development and debugging for printing content to the debugger is :</p>
+                            <ol class="question-choices">
+                                <li class="question-choice">
+                                    <button id="question5-choice1">Javascript</button>
+        
+                                </li>
+                                <li class="question-choice">
+                                    <button id="question5-choice2">terminal/bash</button>
+                                </li>
+        
+                                <li class="quesion-choice">
+                                    <button id="question5-choice3">for loops</button>
+                                </li>
+        
+                                <li class="question-choice">
+                                    <button id="question5-choice4">console . log</button>
+                                </li>
+                            </ol>
+                            <div id="question-4-result"></div>
+                </div>
+            </section>
+            <!-- Quiz Complete Section -->
+            <section id="quiz-complete" hidden>
+                <p>All Done</p>
+                
+                <div id="final-score">
+            
+                </div>
+
+                <form id ="initials-form">
+                <label for="initials" >Enter Initials</label>
+                <input type="text" name="initials"/> 
+                <input type="submit" value="Submit">
+            </form>
+            <div id="question-5-result"></div>
+            </section>
+            <!-- Quiz HighScores -->
+            <section id = "highscores" hidden>
+                <ol class="highscores-list">
+                    
+                    <li class="highscore">
+                        
+                        
+                    </li>
+
+                </ol>
+                <!-- Go Back Button for Homepage/Clear HighScores to Reset the LeaderBoard -->
+                <button>Go Back</button>
+                <button>Clear Highscores</button>
+
+            </section>
+        </main>
+    </body>
+
+    <script src="./assets/js/script.js"></script>
+</html>
